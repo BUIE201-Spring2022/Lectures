@@ -7,12 +7,12 @@ from re import X
 class Node:
     def __init__(self, code: str) -> None:
         self.code = code
-        self.cache = {}
         
 class DAG:
     def __init__(self) -> None:
          self.nodes = []
          self.arcs = []
+         self.cache = {}
 
          self.nodes.append(Node(1))
          self.nodes.append(Node(2))         

@@ -47,7 +47,7 @@ class Tree201:
                 else:
                     self._insert_tree_item(new_tree_item, root.right())
 
-    def Insert(self, new_data):
+    def insert(self, new_data):
         new_tree_item = TreeItem(new_data)
         self._insert_tree_item(new_tree_item, self._root)
     
@@ -68,10 +68,10 @@ class Tree201:
 
 
 t = Tree201()
-t.Insert(6)
-t.Insert(3)
-t.Insert(4)
-t.Insert(8)
-t.Insert(7)
+t.insert(6)
+t.insert(3)
+t.insert(4)
+t.insert(8)
+t.insert(7)
 
 t.print()

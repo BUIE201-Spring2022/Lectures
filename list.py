@@ -20,8 +20,7 @@ class List201:
         self._head = None
 
     def insert_at_head(self, new_data):
-        new_list_item = ListItem(new_data, self._head)
-        self._head = new_list_item
+        self._head = ListItem(new_data, self._head)
 
     def insert_at_tail(self, new_data):
         new_list_item = ListItem(new_data)

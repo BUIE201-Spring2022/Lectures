@@ -4,6 +4,7 @@ class TreeItem:
         self._left = None
         self._right = None
 
+    # operator overloading functions
     def __lt__(self, other):
         return self._data < other._data
     def __gt__(self, other):
@@ -36,7 +37,7 @@ class Tree201:
         if root is None:
             self._root = new_tree_item
         else:
-            if new_tree_item < root:
+            if new_tree_item < root: # calls new_tree_item.__lt__(root)
                 if root.left() is None:
                     root.update(left = new_tree_item)
                 else:
